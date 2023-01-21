@@ -2,87 +2,11 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/adaptive-icon.png",
-      "sha1": "19b53640a95efdc2ccc7fc20f3ea4d0d381bb5c4"
-    },
-    {
-      "path": "assets/favicon.png",
-      "sha1": "cb25ca74ddc488c91522b0ae68fc846fac7f4174"
-    },
-    {
-      "path": "assets/icon.png",
-      "sha1": "3f71f5a8458c06b83424cc33e1f2481f601199ea"
-    },
-    {
-      "path": "assets/splash.png",
-      "sha1": "206a875d5dc6f23eb9515bebd899ebb9f56eca82"
-    },
-    {
-      "path": "assets/stuff/cleaning.png",
-      "sha1": "fd2da05bb219a99ac149799319ab0f12a033c1ed"
-    },
-    {
-      "path": "assets/stuff/coin.png",
-      "sha1": "f6893920c3146e42d93688ac2c56fc41b1f1f6bf"
-    },
-    {
-      "path": "assets/stuff/corgi-happy.gif",
-      "sha1": "b9ad3cac8bf488881a9356136d39344e33f7a556"
-    },
-    {
-      "path": "assets/stuff/corgi-profile.png",
-      "sha1": "e6acaaac829cd4b72de47fda621ce514c6f9c5f1"
-    },
-    {
-      "path": "assets/stuff/corgi-reading.gif",
-      "sha1": "2223e0cae020a369f6fbb9f1fa63b825f64efa42"
-    },
-    {
-      "path": "assets/stuff/corgi-sad.gif",
-      "sha1": "416b20c890c1e9b7e1af0928217bc0964d6ea6b3"
-    },
-    {
-      "path": "assets/stuff/corgi-satisfied.gif",
-      "sha1": "79625b8008f0f968d7d871c5bb33c6f2ebbf0a4c"
-    },
-    {
-      "path": "assets/stuff/corgi-sleeping.gif",
-      "sha1": "b0e72feaa599ddef4b02f3f3b3f765a2068bcfd1"
-    },
-    {
-      "path": "assets/stuff/corgi-sweeping.gif",
-      "sha1": "cd7d28eea04e0bc23ff5ea1e44765ea6850845fa"
-    },
-    {
-      "path": "assets/stuff/exercise.png",
-      "sha1": "f3e0839cd2e6814ba4ddd7694bd3e3eec023c137"
-    },
-    {
-      "path": "assets/stuff/self-care.png",
-      "sha1": "2b84403e8cbf136c4e7aa2319086eff255da0455"
-    },
-    {
-      "path": "assets/stuff/studying.png",
-      "sha1": "6d0dba60fb4698987e281b705aed76420e8e2acb"
-    },
-    {
-      "path": "assets/tab-bar/closet.png",
-      "sha1": "d56a4a882930750ae5a06dd7b2d8c6f71d8b1fd1"
-    },
-    {
-      "path": "assets/tab-bar/home.png",
-      "sha1": "22e5dcdebd005967cc3dc49ffdc4b4503bb8bf32"
-    },
-    {
-      "path": "assets/tab-bar/stats.png",
-      "sha1": "d0c7285a93cc6c472a4e72d02827dee753dd1045"
-    },
-    {
-      "path": "assets/typefaces/recoleta-bold.ttf",
+      "path": "assets/fonts/Recoleta-Bold.ttf",
       "sha1": "1fe1fbf233546ead4727598551c763c9c0207f9e"
     },
     {
-      "path": "assets/typefaces/recoleta-regular.ttf",
+      "path": "assets/fonts/Recoleta-Regular.ttf",
       "sha1": "aebfa59b2d78b0d355241ec7e73184c44913171d"
     }
   ]

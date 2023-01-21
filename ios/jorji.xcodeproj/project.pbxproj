@@ -15,27 +15,8 @@
 		96905EF65AED1B983A6B3ABC /* libPods-jorji.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-jorji.a */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		221592E16E8A4A9E9E5877DF /* recoleta-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38058430E93044FA87D7C7D9 /* recoleta-bold.ttf */; };
-		0EFBA20BCD6B4D398BC68DAE /* recoleta-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8543A012F7E1447CBF0C9F4D /* recoleta-regular.ttf */; };
-		6B1A2418888D4A82BC5BAC60 /* adaptive-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BC4D93ACD0F40F8B23AA32B /* adaptive-icon.png */; };
-		8AD71BFE9E6E44C4BCF45453 /* favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA32D238238D4B079632D66D /* favicon.png */; };
-		95CB1270F1A94542A7541ECB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DD049886204BDFAC0745DF /* icon.png */; };
-		F5D1E3F7A7B5428DAEAB512E /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 93797241DE534E9E8517852C /* splash.png */; };
-		7C6765CBCD81497FB30E0BBD /* cleaning.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9342F0EE4A43EC8684AE7A /* cleaning.png */; };
-		5F9CE3EA090042BA94C5AC33 /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 1135C01F74504EE0A5BCBEAA /* coin.png */; };
-		F29217D6D8984878B7859806 /* corgi-happy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6F68CE7AEC7E433B8276778B /* corgi-happy.gif */; };
-		5352BA435F8044699EFF0528 /* corgi-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 543B33043A80490AB5B24D66 /* corgi-profile.png */; };
-		96EA30C0E2F64D2E9DA769F8 /* corgi-reading.gif in Resources */ = {isa = PBXBuildFile; fileRef = DEADA10AC42C42588AB667C9 /* corgi-reading.gif */; };
-		6AC7722738274FB7A458726E /* corgi-sad.gif in Resources */ = {isa = PBXBuildFile; fileRef = 97CE3B7A86104DCFB9B13E69 /* corgi-sad.gif */; };
-		68909A48C0B54EC09AD4BEE9 /* corgi-satisfied.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3064A9C1FE464EE09A179ED7 /* corgi-satisfied.gif */; };
-		8B664CAF72914C10847CFF1E /* corgi-sleeping.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8320EAD4C95F4652AC51885C /* corgi-sleeping.gif */; };
-		65DB907A519840949A12759D /* corgi-sweeping.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7A524211B55D48C69A3341B3 /* corgi-sweeping.gif */; };
-		6F229798ECB8467AAD4BFC7C /* exercise.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DDF0A381E5043F8A53C0351 /* exercise.png */; };
-		BD1297BB53C24DDD903BBD36 /* self-care.png in Resources */ = {isa = PBXBuildFile; fileRef = B91C11D6C3904A2898703561 /* self-care.png */; };
-		FD4804F826414D0A9DB7CC65 /* studying.png in Resources */ = {isa = PBXBuildFile; fileRef = D2BE469B990B401897EE6399 /* studying.png */; };
-		29F15ADE8FCF4EDFA053B0CA /* closet.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CBB00D217734639837B54E6 /* closet.png */; };
-		95C0D3CCD8964EE8ADED8571 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D9147FFB6304410EAD31946F /* home.png */; };
-		E5BC5CEBAA73491589BB1D8A /* stats.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E48FAC72084429DAF97FD9A /* stats.png */; };
+		632C71CB5C44430586AF13A9 /* Recoleta-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82C70684BDF0402A8EF92AF8 /* Recoleta-Bold.ttf */; };
+		885641A34516457BB5881F6F /* Recoleta-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACA6233F1D254B2A82BB6B44 /* Recoleta-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,27 +35,8 @@
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-jorji/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		38058430E93044FA87D7C7D9 /* recoleta-bold.ttf */ = {isa = PBXFileReference; name = "recoleta-bold.ttf"; path = "../assets/typefaces/recoleta-bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8543A012F7E1447CBF0C9F4D /* recoleta-regular.ttf */ = {isa = PBXFileReference; name = "recoleta-regular.ttf"; path = "../assets/typefaces/recoleta-regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9BC4D93ACD0F40F8B23AA32B /* adaptive-icon.png */ = {isa = PBXFileReference; name = "adaptive-icon.png"; path = "../assets/adaptive-icon.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AA32D238238D4B079632D66D /* favicon.png */ = {isa = PBXFileReference; name = "favicon.png"; path = "../assets/favicon.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		86DD049886204BDFAC0745DF /* icon.png */ = {isa = PBXFileReference; name = "icon.png"; path = "../assets/icon.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		93797241DE534E9E8517852C /* splash.png */ = {isa = PBXFileReference; name = "splash.png"; path = "../assets/splash.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0D9342F0EE4A43EC8684AE7A /* cleaning.png */ = {isa = PBXFileReference; name = "cleaning.png"; path = "../assets/stuff/cleaning.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1135C01F74504EE0A5BCBEAA /* coin.png */ = {isa = PBXFileReference; name = "coin.png"; path = "../assets/stuff/coin.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6F68CE7AEC7E433B8276778B /* corgi-happy.gif */ = {isa = PBXFileReference; name = "corgi-happy.gif"; path = "../assets/stuff/corgi-happy.gif"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		543B33043A80490AB5B24D66 /* corgi-profile.png */ = {isa = PBXFileReference; name = "corgi-profile.png"; path = "../assets/stuff/corgi-profile.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		DEADA10AC42C42588AB667C9 /* corgi-reading.gif */ = {isa = PBXFileReference; name = "corgi-reading.gif"; path = "../assets/stuff/corgi-reading.gif"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		97CE3B7A86104DCFB9B13E69 /* corgi-sad.gif */ = {isa = PBXFileReference; name = "corgi-sad.gif"; path = "../assets/stuff/corgi-sad.gif"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3064A9C1FE464EE09A179ED7 /* corgi-satisfied.gif */ = {isa = PBXFileReference; name = "corgi-satisfied.gif"; path = "../assets/stuff/corgi-satisfied.gif"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8320EAD4C95F4652AC51885C /* corgi-sleeping.gif */ = {isa = PBXFileReference; name = "corgi-sleeping.gif"; path = "../assets/stuff/corgi-sleeping.gif"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7A524211B55D48C69A3341B3 /* corgi-sweeping.gif */ = {isa = PBXFileReference; name = "corgi-sweeping.gif"; path = "../assets/stuff/corgi-sweeping.gif"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1DDF0A381E5043F8A53C0351 /* exercise.png */ = {isa = PBXFileReference; name = "exercise.png"; path = "../assets/stuff/exercise.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B91C11D6C3904A2898703561 /* self-care.png */ = {isa = PBXFileReference; name = "self-care.png"; path = "../assets/stuff/self-care.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D2BE469B990B401897EE6399 /* studying.png */ = {isa = PBXFileReference; name = "studying.png"; path = "../assets/stuff/studying.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9CBB00D217734639837B54E6 /* closet.png */ = {isa = PBXFileReference; name = "closet.png"; path = "../assets/tab-bar/closet.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D9147FFB6304410EAD31946F /* home.png */ = {isa = PBXFileReference; name = "home.png"; path = "../assets/tab-bar/home.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4E48FAC72084429DAF97FD9A /* stats.png */ = {isa = PBXFileReference; name = "stats.png"; path = "../assets/tab-bar/stats.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		82C70684BDF0402A8EF92AF8 /* Recoleta-Bold.ttf */ = {isa = PBXFileReference; name = "Recoleta-Bold.ttf"; path = "../assets/fonts/Recoleta-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ACA6233F1D254B2A82BB6B44 /* Recoleta-Regular.ttf */ = {isa = PBXFileReference; name = "Recoleta-Regular.ttf"; path = "../assets/fonts/Recoleta-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,27 +144,8 @@
 		A37EB515BD30442DA472BF47 /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
-				38058430E93044FA87D7C7D9 /* recoleta-bold.ttf */,
-				8543A012F7E1447CBF0C9F4D /* recoleta-regular.ttf */,
-				9BC4D93ACD0F40F8B23AA32B /* adaptive-icon.png */,
-				AA32D238238D4B079632D66D /* favicon.png */,
-				86DD049886204BDFAC0745DF /* icon.png */,
-				93797241DE534E9E8517852C /* splash.png */,
-				0D9342F0EE4A43EC8684AE7A /* cleaning.png */,
-				1135C01F74504EE0A5BCBEAA /* coin.png */,
-				6F68CE7AEC7E433B8276778B /* corgi-happy.gif */,
-				543B33043A80490AB5B24D66 /* corgi-profile.png */,
-				DEADA10AC42C42588AB667C9 /* corgi-reading.gif */,
-				97CE3B7A86104DCFB9B13E69 /* corgi-sad.gif */,
-				3064A9C1FE464EE09A179ED7 /* corgi-satisfied.gif */,
-				8320EAD4C95F4652AC51885C /* corgi-sleeping.gif */,
-				7A524211B55D48C69A3341B3 /* corgi-sweeping.gif */,
-				1DDF0A381E5043F8A53C0351 /* exercise.png */,
-				B91C11D6C3904A2898703561 /* self-care.png */,
-				D2BE469B990B401897EE6399 /* studying.png */,
-				9CBB00D217734639837B54E6 /* closet.png */,
-				D9147FFB6304410EAD31946F /* home.png */,
-				4E48FAC72084429DAF97FD9A /* stats.png */,
+				82C70684BDF0402A8EF92AF8 /* Recoleta-Bold.ttf */,
+				ACA6233F1D254B2A82BB6B44 /* Recoleta-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -271,27 +214,8 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				221592E16E8A4A9E9E5877DF /* recoleta-bold.ttf in Resources */,
-				0EFBA20BCD6B4D398BC68DAE /* recoleta-regular.ttf in Resources */,
-				6B1A2418888D4A82BC5BAC60 /* adaptive-icon.png in Resources */,
-				8AD71BFE9E6E44C4BCF45453 /* favicon.png in Resources */,
-				95CB1270F1A94542A7541ECB /* icon.png in Resources */,
-				F5D1E3F7A7B5428DAEAB512E /* splash.png in Resources */,
-				7C6765CBCD81497FB30E0BBD /* cleaning.png in Resources */,
-				5F9CE3EA090042BA94C5AC33 /* coin.png in Resources */,
-				F29217D6D8984878B7859806 /* corgi-happy.gif in Resources */,
-				5352BA435F8044699EFF0528 /* corgi-profile.png in Resources */,
-				96EA30C0E2F64D2E9DA769F8 /* corgi-reading.gif in Resources */,
-				6AC7722738274FB7A458726E /* corgi-sad.gif in Resources */,
-				68909A48C0B54EC09AD4BEE9 /* corgi-satisfied.gif in Resources */,
-				8B664CAF72914C10847CFF1E /* corgi-sleeping.gif in Resources */,
-				65DB907A519840949A12759D /* corgi-sweeping.gif in Resources */,
-				6F229798ECB8467AAD4BFC7C /* exercise.png in Resources */,
-				BD1297BB53C24DDD903BBD36 /* self-care.png in Resources */,
-				FD4804F826414D0A9DB7CC65 /* studying.png in Resources */,
-				29F15ADE8FCF4EDFA053B0CA /* closet.png in Resources */,
-				95C0D3CCD8964EE8ADED8571 /* home.png in Resources */,
-				E5BC5CEBAA73491589BB1D8A /* stats.png in Resources */,
+				632C71CB5C44430586AF13A9 /* Recoleta-Bold.ttf in Resources */,
+				885641A34516457BB5881F6F /* Recoleta-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
