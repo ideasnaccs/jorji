@@ -12,7 +12,7 @@ export default function App() {
     {
       key: "home",
       title: "Home",
-      focusedIcon: "heart",
+      focusedIcon: { require("./assets/tab-bar/home.png") },
     },
     { key: "stats", title: "Stats", focusedIcon: "album" },
     {
