@@ -7,7 +7,9 @@ import {
   BottomNavigation,
   BottomNavigationTab,
 } from "@ui-kitten/components";
+
 import theme from "./theme.json";
+import mapping from "./mapping.json";
 
 import Home from "./screens/Home";
 import Stats from "./screens/Stats";
@@ -20,6 +22,7 @@ function BottomTabBar({ navigation, state }) {
     <BottomNavigation
       selectedIndex={state.index}
       onSelect={(index) => navigation.navigate(state.routeNames[index])}
+      customMapping={mapping}
     >
       <BottomNavigationTab title="Home" />
       <BottomNavigationTab title="Stats" />
