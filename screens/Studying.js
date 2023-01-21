@@ -1,11 +1,13 @@
-import { Text, View, Button } from "react-native";
+import { Layout, Button } from "@ui-kitten/components";
 
 export default function Studying({ navigation }) {
   return (
     <>
-      <View>
-        <Text>studying</Text>
-      </View>
+      <Layout
+        style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+      >
+        <Button>HOME</Button>
+      </Layout>
     </>
   );
 }
