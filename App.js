@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 
-import { Provider, BottomNavigation, Text } from "react-native-paper";
+import { Provider, BottomNavigation } from "react-native-paper";
 
 import Home from "./screens/Home";
 import Stats from "./screens/Stats";
@@ -15,7 +15,6 @@ export default function App() {
       focusedIcon: "heart",
     },
     { key: "stats", title: "Stats", focusedIcon: "album" },
-    { key: "recents", title: "Recents", focusedIcon: "history" },
     {
       key: "closet",
       title: "Closet",
@@ -31,12 +30,11 @@ export default function App() {
 
   return (
     <Provider>
-      {/* <BottomNavigation
+      <BottomNavigation
         navigationState={{ index, routes }}
         onIndexChange={setIndex}
         renderScene={renderScene}
-      /> */}
-      <Text>LMFAOOOOOOOOO</Text>
+      />
     </Provider>
   );
 }
