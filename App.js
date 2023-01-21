@@ -1,3 +1,6 @@
+import { React } from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import * as eva from "@eva-design/eva";
 import {
   ApplicationProvider,
@@ -10,14 +13,31 @@ import Home from "./screens/Home";
 import Stats from "./screens/Stats";
 import Closet from "./screens/Closet";
 
+const { Navigator, Screen } = createBottomTabNavigator();
+
+function BottomTabBar({ navigation, state }) {
+  return (
+    <BottomNavigation
+      selectedIndex={state.index}
+      onSelect={(index) => navigation.navigate(state.routeNames[index])}
+    >
+      <BottomNavigationTab title="Home" />
+      <BottomNavigationTab title="Stats" />
+      <BottomNavigationTab title="Closet" />
+    </BottomNavigation>
+  );
+}
+
 export default function App() {
   return (
     <ApplicationProvider {...eva} theme={{ ...eva.light, ...theme }}>
-      <BottomNavigation>
-        <BottomNavigationTab title="Home" component={Home} />
-        <BottomNavigationTab title="Stats" component={Stats} />
-        <BottomNavigationTab title="Closet" component={Closet} />
-      </BottomNavigation>
+      <NavigationContainer>
+        <Navigator tabBar={(props) => <BottomTabBar {...props} />}>
+          <Screen name="Home" component={Home} />
+          <Screen name="Stats" component={Stats} />
+          <Screen name="Closet" component={Closet} />
+        </Navigator>
+      </NavigationContainer>
     </ApplicationProvider>
   );
 }

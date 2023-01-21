@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <Toggle checked={checked} onChange={onCheckedChange}>
-      {`Checked: ${checked}`}
+      {`lol`}
     </Toggle>
   );
 }
