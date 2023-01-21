@@ -1,25 +1,42 @@
-import { React } from "react";
-import { NavigationContainer } from "@react-navigation/native";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { React, useState } from "react";
 
-import { PaperProvider, BottomNavigation } from "react-native-paper";
+import { Provider, BottomNavigation, Text } from "react-native-paper";
 
 import Home from "./screens/Home";
 import Stats from "./screens/Stats";
 import Closet from "./screens/Closet";
 
-const { Navigator, Screen } = createBottomTabNavigator();
-
 export default function App() {
+  const [index, setIndex] = useState(0);
+  const [routes] = useState([
+    {
+      key: "home",
+      title: "Home",
+      focusedIcon: "heart",
+    },
+    { key: "stats", title: "Stats", focusedIcon: "album" },
+    { key: "recents", title: "Recents", focusedIcon: "history" },
+    {
+      key: "closet",
+      title: "Closet",
+      focusedIcon: "bell",
+    },
+  ]);
+
+  const renderScene = BottomNavigation.SceneMap({
+    home: Home,
+    stats: Stats,
+    closet: Closet,
+  });
+
   return (
-    <PaperProvider>
-      <NavigationContainer>
-        <Navigator>
-          <Screen name="Home" component={Home} />
-          <Screen name="Stats" component={Stats} />
-          <Screen name="Closet" component={Closet} />
-        </Navigator>
-      </NavigationContainer>
-    </PaperProvider>
+    <Provider>
+      {/* <BottomNavigation
+        navigationState={{ index, routes }}
+        onIndexChange={setIndex}
+        renderScene={renderScene}
+      /> */}
+      <Text>LMFAOOOOOOOOO</Text>
+    </Provider>
   );
 }
