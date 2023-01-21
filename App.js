@@ -12,13 +12,17 @@ export default function App() {
     {
       key: "home",
       title: "Home",
-      focusedIcon: { require("./assets/tab-bar/home.png") },
+      focusedIcon: require("./assets/tab-bar/home.png"),
     },
-    { key: "stats", title: "Stats", focusedIcon: "album" },
+    {
+      key: "stats",
+      title: "Stats",
+      focusedIcon: require("./assets/tab-bar/stats.png"),
+    },
     {
       key: "closet",
       title: "Closet",
-      focusedIcon: "bell",
+      focusedIcon: require("./assets/tab-bar/closet.png"),
     },
   ]);
 
