@@ -1,12 +1,31 @@
-import { React, useState } from "react";
+import { React, useState, useCallback } from "react";
 
-import { Provider, BottomNavigation } from "react-native-paper";
+import { useFonts } from "expo-font";
+import * as SplashScreen from "expo-splash-screen";
+
+import {
+  Provider,
+  BottomNavigation,
+  MD3LightTheme,
+  configureFonts,
+} from "react-native-paper";
 
 import Home from "./screens/Home";
 import Stats from "./screens/Stats";
 import Closet from "./screens/Closet";
 
-export default function App() {
+SplashScreen.preventAutoHideAsync();
+
+const fontConfig = {
+  fontFamily: "Recoleta-Regular",
+};
+
+const theme = {
+  ...MD3LightTheme,
+  fonts: configureFonts({ config: fontConfig }),
+};
+
+function BottomTabs() {
   const [index, setIndex] = useState(0);
   const [routes] = useState([
     {
@@ -33,12 +52,33 @@ export default function App() {
   });
 
   return (
-    <Provider>
-      <BottomNavigation
-        navigationState={{ index, routes }}
-        onIndexChange={setIndex}
-        renderScene={renderScene}
-      />
+    <BottomNavigation
+      navigationState={{ index, routes }}
+      onIndexChange={setIndex}
+      renderScene={renderScene}
+    />
+  );
+}
+
+export default function App() {
+  const [fontsLoaded] = useFonts({
+    "Recoleta-Regular": require("./assets/fonts/Recoleta-Regular.ttf"),
+    "Recoleta-Bold": require("./assets/fonts/Recoleta-Bold.ttf"),
+  });
+
+  const onLayoutRootView = useCallback(async () => {
+    if (fontsLoaded) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
+  return (
+    <Provider theme={theme}>
+      <BottomTabs />
     </Provider>
   );
 }
