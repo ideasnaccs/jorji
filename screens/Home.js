@@ -1,14 +1,37 @@
-import React, { useState } from "react";
-import { Button, Text } from "react-native-paper";
+import React, { useState, useRef } from "react";
+import { Button, Text, Card } from "react-native-paper";
 import { bleManager } from "../ble-utils/init";
-import { DEVICE_NAME, SERVICE_UUID } from "../ble-utils/constants";
-import * as React from "react";
-import { Avatar, Button, Card, Text } from "react-native-paper";
+import { DEVICE_NAME } from "../ble-utils/constants";
 import { SafeAreaView, View, StyleSheet, Image } from "react-native";
+import StopwatchTimer from "react-native-animated-stopwatch-timer";
+
+const MODE_DATA = {
+  1: {
+    titles: ["HELLO!!", "HOPE YOU ARE HAVING A GREAT DAY!", ""],
+    image: require("../assets/stuff/corgi-pop.gif"),
+  },
+  2: {
+    titles: ["CURRENTLY", "doing self care!", "TAKE A BREAK!"],
+    image: require("../assets/stuff/corgi-sleeping.gif"),
+  },
+  3: {
+    titles: ["CURRENTLY", "studying!", "YOU GOT THIS!"],
+    image: require("../assets/stuff/corgi-reading.gif"),
+  },
+  4: {
+    titles: ["CURRENTLY", "cleaning!", "YOU'RE DOING THIS FOR FUTURE YOU"],
+    image: require("../assets/stuff/corgi-sweeping.gif"),
+  },
+  5: {
+    titles: ["CURRENTLY", "exercising!", "YOU'RE DOING AMAZING!"],
+    image: require("../assets/stuff/corgi-satisfied.gif"),
+  },
+};
 
 export default function Home() {
   const [unconnectedDevice, setUnconnectedDevice] = useState(null);
   const [device, setDevice] = useState(null);
+  const stopwatchRef = useRef(null);
 
   function startScan() {
     bleManager.startDeviceScan(null, null, (error, device) => {
@@ -47,10 +70,7 @@ export default function Home() {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      justifyContent: "center",
-      backgroundColor: "#ecf0f1",
-      padding: 20,
-      border: 0,
+      justifyContent: "flex-end",
     },
     subtitle: {
       fontSize: 24,
@@ -64,119 +84,90 @@ export default function Home() {
       textAlign: "center",
       padding: 5,
     },
+    image: {
+      alignSelf: "center",
+    },
+    stopWatchContainer: {
+      alignSelf: "center",
+      justifyContent: "center",
+      padding: 20,
+      backgroundColor: "#cfbfee",
+      borderRadius: 24,
+      width: 130,
+    },
+    stopWatchChar: {
+      fontFamily: "Recoleta-Bold",
+      fontSize: 24,
+      alignSelf: "center",
+    },
+    button: {
+      alignSelf: "center",
+      width: 250,
+      margin: 60,
+    },
+    buttonLabel: {
+      fontFamily: "Recoleta-Bold",
+      fontSize: 16,
+    },
   });
 
-  const [checked, setChecked] = React.useState(false);
+  const [mode, setMode] = useState(5);
 
-  function Nothing(props) {
+  function JorjiMode({ titles, image }) {
     return (
       <SafeAreaView style={styles.container}>
         <View style={styles.container}>
-          <Card>
-            <Text style={styles.title}></Text>
-            <Text style={styles.title}>HELLO!!</Text>
-            <Text style={styles.title}>HOPE YOU ARE HAVING A GREAT DAY!</Text>
-            <Text style={styles.title}></Text>
-            <Image source={require("../assets/stuff/corgi-pop.gif")} />
+          <Card mode="contained">
+            <Text style={styles.title}>{titles[0]}</Text>
+            <Text style={styles.title}>{titles[1]}</Text>
+            <Image style={styles.image} source={image} />
+            <StopwatchTimer
+              ref={stopwatchRef}
+              containerStyle={styles.stopWatchContainer}
+              // `textCharStyle` is required, otherwise the app crashes. Not sure why.
+              textCharStyle={styles.stopWatchChar}
+              trailingZeros={0}
+            />
+            <Text style={styles.subtitle}>{titles[2]}</Text>
           </Card>
         </View>
       </SafeAreaView>
     );
-  }
-  function Selfcare(props) {
-    return (
-      <SafeAreaView style={styles.container}>
-        <View style={styles.container}>
-          <Card>
-            <Text style={styles.title}></Text>
-            <Text style={styles.title}>CURRENTLY</Text>
-            <Text style={styles.title}>doing self care!</Text>
-            <Text style={styles.title}></Text>
-            <Image source={require("../assets/stuff/corgi-sleeping.gif")} />
-            <Text style={styles.title}>TAKE A BREAK!</Text>
-          </Card>
-        </View>
-      </SafeAreaView>
-    );
-  }
-  function Study(props) {
-    return (
-      <SafeAreaView style={styles.container}>
-        <View style={styles.container}>
-          <Card>
-            <Text style={styles.title}></Text>
-            <Text style={styles.title}>CURRENTLY</Text>
-            <Text style={styles.title}>studying!</Text>
-            <Text style={styles.title}></Text>
-            <Image source={require("../assets/stuff/corgi-reading.gif")} />
-            <Text style={styles.title}>YOU GOT THIS!</Text>
-          </Card>
-        </View>
-      </SafeAreaView>
-    );
-  }
-  function Exercise(props) {
-    return (
-      <SafeAreaView style={styles.container}>
-        <View style={styles.container}>
-          <Card>
-            <Text style={styles.title}></Text>
-            <Text style={styles.title}>CURRENTLY</Text>
-            <Text style={styles.title}>exercising!</Text>
-            <Text style={styles.title}></Text>
-            <Image source={require("../assets/stuff/corgi-reading.gif")} />
-            <Text style={styles.title}>YOU'RE DOING AMAZING!</Text>
-          </Card>
-        </View>
-      </SafeAreaView>
-    );
-  }
-  function Clean(props) {
-    return (
-      <SafeAreaView style={styles.container}>
-        <View style={styles.container}>
-          <Card>
-            <Text style={styles.title}></Text>
-            <Text style={styles.title}>CURRENTLY</Text>
-            <Text style={styles.title}>cleaning!</Text>
-            <Text style={styles.title}></Text>
-            <Image source={require("../assets/stuff/corgi-sweeping.gif")} />
-            <Text style={styles.title}>YOU'RE DOING THIS FOR FUTURE YOU</Text>
-          </Card>
-        </View>
-      </SafeAreaView>
-    );
-  }
-
-  function onCheckedChange(isChecked) {
-    setChecked(isChecked);
-  }
-
-  function ChangeMode({ mode }) {
-    if (mode === 1) {
-      return <Nothing />;
-    } else if (mode === 1) {
-      return <Nothing />;
-    } else if (mode === 2) {
-      return <Selfcare />;
-    } else if (mode === 3) {
-      return <Study />;
-    } else if (mode === 4) {
-      return <Exercise />;
-    } else if (mode === 5) {
-      return <Clean />;
-    }
   }
 
   return (
     <>
-      <ChangeMode mode={3} />
+      <JorjiMode
+        titles={MODE_DATA[mode].titles}
+        image={MODE_DATA[mode].image}
+      />
       {unconnectedDevice === null ? (
-        <Button onPress={() => startScan()}>SCAN ME HARDER</Button>
+        <Button
+          mode="contained"
+          style={styles.button}
+          labelStyle={styles.buttonLabel}
+          onPress={() => startScan()}
+        >
+          SCAN FOR JORJI
+        </Button>
       ) : device === null ? (
-        <Button onPress={() => connectDevice()}>CONNECT ME HARDER</Button>
+        <Button
+          mode="contained"
+          contentStyle={styles.button}
+          labelStyle={styles.buttonLabel}
+          onPress={() => connectDevice()}
+        >
+          CONNECT ME HARDER
+        </Button>
       ) : (
-        <Button onPress={() => disconnectDevice()}>DISCONNECT ME HARDER</Button>
+        <Button
+          mode="contained"
+          contentStyle={styles.button}
+          labelStyle={styles.buttonLabel}
+          onPress={() => disconnectDevice()}
+        >
+          DISCONNECT ME HARDER
+        </Button>
       )}
     </>
   );

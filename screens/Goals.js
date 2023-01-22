@@ -1,8 +1,9 @@
-import React from "react";
-import { Text } from "react-native-paper";
+import { React, useState } from "react";
+import { StyleSheet, Image, View, SafeAreaView } from "react-native";
+import { Text, Card } from "react-native-paper";
 
-export default function Home() {
-  const [pressed, setPressed] = React.setState(false);
+export default function Goals() {
+  const [pressed, setPressed] = useState(false);
   const styles = StyleSheet.create({
     container: {
       flex: 1,
