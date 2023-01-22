@@ -3,12 +3,7 @@ import { React, useState, useCallback } from "react";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 
-import {
-  Provider,
-  BottomNavigation,
-  MD3LightTheme,
-  configureFonts,
-} from "react-native-paper";
+import { Provider, MD3LightTheme, configureFonts } from "react-native-paper";
 
 import BottomTabNav from "./components/BottomTabNav";
 
