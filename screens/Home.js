@@ -29,16 +29,34 @@ export default function Home() {
 
   function Nothing(props) {
     return (
-      <Card>
-        <Card.Title> hello </Card.Title>
-        <Card.Content>
-          <Text>yo</Text>
-        </Card.Content>
-      </Card>
+      <SafeAreaView style={styles.container}>
+        <View style={styles.container}>
+          <Card>
+            <Text style={styles.title}></Text>
+            <Text style={styles.title}>HELLO!!</Text>
+            <Text style={styles.title}>HOPE YOU ARE HAVING A GREAT DAY!</Text>
+            <Text style={styles.title}></Text>
+            <Image source={require("../assets/stuff/corgi-pop.gif")} />
+          </Card>
+        </View>
+      </SafeAreaView>
     );
   }
   function Selfcare(props) {
-    return <Text>yo (selfcare)</Text>;
+    return (
+      <SafeAreaView style={styles.container}>
+        <View style={styles.container}>
+          <Card>
+            <Text style={styles.title}></Text>
+            <Text style={styles.title}>CURRENTLY</Text>
+            <Text style={styles.title}>doing self care!</Text>
+            <Text style={styles.title}></Text>
+            <Image source={require("../assets/stuff/corgi-sleeping.gif")} />
+            <Text style={styles.title}>TAKE A BREAK!</Text>
+          </Card>
+        </View>
+      </SafeAreaView>
+    );
   }
   function Study(props) {
     return (
@@ -46,20 +64,47 @@ export default function Home() {
         <View style={styles.container}>
           <Card>
             <Text style={styles.title}></Text>
-            <Text style={styles.title}>YOU ARE</Text>
-            <Text style={styles.title}>STUDYING</Text>
+            <Text style={styles.title}>CURRENTLY</Text>
+            <Text style={styles.title}>studying!</Text>
             <Text style={styles.title}></Text>
             <Image source={require("../assets/stuff/corgi-reading.gif")} />
+            <Text style={styles.title}>YOU GOT THIS!</Text>
           </Card>
         </View>
       </SafeAreaView>
     );
   }
   function Exercise(props) {
-    return <Text>yo (exercise)</Text>;
+    return (
+      <SafeAreaView style={styles.container}>
+        <View style={styles.container}>
+          <Card>
+            <Text style={styles.title}></Text>
+            <Text style={styles.title}>CURRENTLY</Text>
+            <Text style={styles.title}>exercising!</Text>
+            <Text style={styles.title}></Text>
+            <Image source={require("../assets/stuff/corgi-reading.gif")} />
+            <Text style={styles.title}>YOU'RE DOING AMAZING!</Text>
+          </Card>
+        </View>
+      </SafeAreaView>
+    );
   }
   function Clean(props) {
-    return <Text>yo (cleaning) </Text>;
+    return (
+      <SafeAreaView style={styles.container}>
+        <View style={styles.container}>
+          <Card>
+            <Text style={styles.title}></Text>
+            <Text style={styles.title}>CURRENTLY</Text>
+            <Text style={styles.title}>cleaning!</Text>
+            <Text style={styles.title}></Text>
+            <Image source={require("../assets/stuff/corgi-sweeping.gif")} />
+            <Text style={styles.title}>YOU'RE DOING THIS FOR FUTURE YOU</Text>
+          </Card>
+        </View>
+      </SafeAreaView>
+    );
   }
 
   function onCheckedChange(isChecked) {

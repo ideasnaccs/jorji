@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BottomNavigation } from "react-native-paper";
 
 import Home from "../screens/Home";
+import Goals from "../screens/Goals";
 import Stats from "../screens/Stats";
 import Closet from "../screens/Closet";
 
@@ -19,6 +20,11 @@ export default function BottomTabNav() {
       focusedIcon: require("../assets/tab-bar/stats.png"),
     },
     {
+      key: "goals",
+      title: "Goals",
+      focusedIcon: require("../assets/tab-bar/goals.png"),
+    },
+    {
       key: "closet",
       title: "Closet",
       focusedIcon: require("../assets/tab-bar/closet.png"),
@@ -28,6 +34,7 @@ export default function BottomTabNav() {
   const renderScene = BottomNavigation.SceneMap({
     home: Home,
     stats: Stats,
+    goals: Goals,
     closet: Closet,
   });
 
